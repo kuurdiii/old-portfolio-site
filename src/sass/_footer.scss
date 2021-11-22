@@ -61,10 +61,10 @@
 
   // transform: translateX(-50%);
 
-  background-color: $color-red;
+  background-color: $color-blue2;
 
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-timing-function: ease-in-out;
@@ -74,6 +74,7 @@
 
   &:hover {
     cursor: pointer;
+    background-color: $color-blue3;
     animation-name: bounce;
     -moz-animation-name: bounce;
   }

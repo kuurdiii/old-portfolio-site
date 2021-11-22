@@ -1,9 +1,9 @@
 .navigation {
   display: flex;
-  margin-right: 10rem;
+  margin-right: 0rem;
 
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 3rem;
+  font-weight: 300;
   letter-spacing: 1px;
 
   @media (max-width: 1200px) {
@@ -19,14 +19,16 @@
     position: -webkit-sticky;
     top: 0;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+	  flex-wrap: nowrap;
+	  justify-content: center;
     align-items: center;
     height: 6rem;
-    border-bottom: 1px solid $color-background;
-    background-color: rgba($color-background-light, 0.95);
+    border-bottom: 0px solid $color-background;
+    background-color: rgba($color-background-light, 0.45);
     backdrop-filter: blur(8px);
 
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 4px rgba(105, 130, 146, 0.274);
 
     z-index: 99999999999;
 
@@ -42,11 +44,11 @@
     }
 
     &--active {
-      color: $color-red;
+      color: $color-blue;
       // font-weight: 600;
     }
     &:hover {
-      color: $color-red;
+      color: $color-blue;
       // font-weight: 600;
     }
   }

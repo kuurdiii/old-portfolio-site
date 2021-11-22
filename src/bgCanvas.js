@@ -2,9 +2,9 @@ const canvasDotsBg = function () {
   const canvas = document.querySelector('.canvas-2'),
     ctx = canvas.getContext('2d'),
     colorDot = [
-      'rgb(81, 162, 233)',
-      'rgb(81, 162, 233)',
-      'rgb(81, 162, 233)',
+      'rgb(255, 77, 90)',
+      'rgb(255, 77, 90)',
+      'rgb(255, 77, 90)',
       'rgb(255, 77, 90)',
     ], // 75% of dots are blue. 25% pink
     color = 'rgb(81, 162, 233)';

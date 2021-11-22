@@ -29,7 +29,7 @@
     &:before {
       position: absolute;
       content: '';
-      border-bottom: 18px solid $color-red;
+      border-bottom: 18px solid $color-blue2;
       width: 16rem;
       display: block;
       margin: 0 auto;
@@ -41,7 +41,7 @@
 
       @media (max-width: 770px) {
         // width: 14rem;
-        border-bottom: 14px solid $color-red;
+        border-bottom: 14px solid $color-blue2;
       }
     }
   }
@@ -153,7 +153,7 @@
     border-image-slice: 1;
     border-width: 3px;
     background-image: linear-gradient($color-background, $color-background),
-      radial-gradient(circle at top left, $color-blue, $color-red);
+      radial-gradient(circle at top left, $color-white, $color-blue2);
     border-radius: 10px;
     background-origin: border-box;
     background-clip: content-box, border-box;

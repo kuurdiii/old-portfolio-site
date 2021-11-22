@@ -3,12 +3,12 @@ const canvasDots = function () {
     ctx = canvas.getContext('2d'),
     colorDot = [
       'rgb(81, 162, 233)',
-      'rgb(81, 162, 233)',
-      'rgb(81, 162, 233)',
-      'rgb(81, 162, 233)',
+      'rgb(255, 77, 90)',
+      'rgb(255, 77, 90)',
+      'rgb(255, 77, 90)',
       'rgb(255, 77, 90)',
     ], // 80% of dots are blue. 20% pink
-    color = 'rgb(81, 162, 233)';
+    color = 'rgb(255, 77, 90)';
 
   // ctx.globalAlpha = 0.8;
   canvas.width = document.body.scrollWidth;
@@ -16,7 +16,7 @@ const canvasDots = function () {
   canvas.style.display = 'block';
   // ctx.fillStyle = colorDot;
   // ctx.fillStyle = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
-  ctx.lineWidth = 0.3;
+  ctx.lineWidth = 2;
   ctx.strokeStyle = color;
 
   let mousePosition = {
@@ -29,21 +29,21 @@ const canvasDots = function () {
 
   if (windowSize > 1600) {
     dots = {
-      nb: 600, // number of particles
-      distance: 70, // max distance between particles for them to link
+      nb: 900, // number of particles
+      distance: 60, // max distance between particles for them to link
       d_radius: 300, // radius from mouse location that particles will link
       array: [],
     };
   } else if (windowSize > 1300) {
     dots = {
-      nb: 575,
+      nb: 675,
       distance: 60,
       d_radius: 280,
       array: [],
     };
   } else if (windowSize > 1100) {
     dots = {
-      nb: 500,
+      nb: 550,
       distance: 55,
       d_radius: 250,
       array: [],
@@ -100,10 +100,10 @@ const canvasDots = function () {
     this.x = Math.random() * canvas.width;
     this.y = Math.random() * canvas.height;
 
-    this.vx = -0.5 + Math.random();
-    this.vy = -0.5 + Math.random();
+    this.vx = -1 + Math.random();
+    this.vy = -1 + Math.random();
 
-    this.radius = Math.random() * 1.5;
+    this.radius = Math.random() * 2;
 
     // this.colour = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
     this.colour = colorDot[Math.floor(Math.random() * colorDot.length)];
