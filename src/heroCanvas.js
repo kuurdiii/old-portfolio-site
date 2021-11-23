@@ -29,7 +29,7 @@ const canvasDots = function () {
 
   if (windowSize > 1600) {
     dots = {
-      nb: 700, // number of particles
+      nb: 600, // number of particles
       distance: 60, // max distance between particles for them to link
       d_radius: 300, // radius from mouse location that particles will link
       array: [],
