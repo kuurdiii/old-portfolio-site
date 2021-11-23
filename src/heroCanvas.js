@@ -8,7 +8,7 @@ const canvasDots = function () {
       'rgb(255, 77, 90)',
       'rgb(255, 77, 90)',
     ], // 80% of dots are blue. 20% pink
-    color = 'rgb(255, 77, 90)';
+    color = 'rgb(81, 162, 233)';
 
   // ctx.globalAlpha = 0.8;
   canvas.width = document.body.scrollWidth;
@@ -29,7 +29,7 @@ const canvasDots = function () {
 
   if (windowSize > 1600) {
     dots = {
-      nb: 900, // number of particles
+      nb: 700, // number of particles
       distance: 60, // max distance between particles for them to link
       d_radius: 300, // radius from mouse location that particles will link
       array: [],
