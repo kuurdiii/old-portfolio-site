@@ -170,7 +170,7 @@ const canvasDots = function () {
               const dotDistance =
                 ((i_dot.x - mousePosition.x) ** 2 +
                   (i_dot.y - mousePosition.y) ** 2) **
-                0.5;
+                0.559;
               let distanceRatio = dotDistance / dots.d_radius;
 
               // make it so it doesnt fade out completely
