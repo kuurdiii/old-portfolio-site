@@ -1,12 +1,30 @@
 import './sass/main.scss';
 import canvasDots from './heroCanvas.js';
 import canvasDotsBg from './bgCanvas.js';
+import TxtRotate from "./txtRotate.js";
 import { doc } from 'prettier';
 
 window.onload = function () {
   canvasDotsBg();
   canvasDots();
+  txt_Rotate();
 };
+
+function txt_Rotate() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i = 0; i < elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.1em solid #666 }";
+  document.body.appendChild(css);
+}
 
 // loads in about section on scroll
 function aboutFadeIn(entries, observer) {
@@ -157,17 +175,16 @@ let observerNavProjects = new IntersectionObserver(navFadeInProjects, options2);
 
 observerNavProjects.observe(document.querySelector('#projects'));
 
-// parralax scrolling effect on hero canvas
+ //parralax scrolling effect on hero canvas
+ //window.onscroll = function (e) {
+  // console.log(document.scrollTop);
+ //};
 
-// window.onscroll = function (e) {
-//   console.log(document.scrollTop);
-// };
+ //document.addEventListener('scroll', () => {
+    //console.log(window.scrollY);
 
-// document.addEventListener('scroll', () => {
-//   // console.log(window.scrollY);
-
-//   document.querySelector('.connecting-dots').style.top = `${window.scrollY}px`;
-// });
+   //document.querySelector('.connecting-dots').style.top = `${window.scrollY}px`;
+ //});
 
 // form validation
 
