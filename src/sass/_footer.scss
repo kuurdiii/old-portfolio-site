@@ -42,7 +42,7 @@
 }
 
 .copyright {
-  color: $color-text;
+  color: $color-white;
   font-size: 10px;
   font-weight: 500;
 }
@@ -63,8 +63,8 @@
 
   background-color: $color-blue2;
 
-  -webkit-animation-duration: .8s;
-  animation-duration: .8s;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-timing-function: ease-in-out;

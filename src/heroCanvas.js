@@ -2,21 +2,21 @@ const canvasDots = function () {
   const canvas = document.querySelector('canvas'),
     ctx = canvas.getContext('2d'),
     colorDot = [
-      'rgb(81, 162, 233)',
-      'rgb(255, 77, 90)',
-      'rgb(255, 77, 90)',
-      'rgb(255, 77, 90)',
-      'rgb(255, 77, 90)',
+      'rgb(97, 156, 156 )',
+      'rgb(97, 156, 156 )',
+      'rgb(97, 156, 156) ',
+      'rgb(97, 156, 156 )',
+      'rgb(97, 156, 156 )',
     ], // 80% of dots are blue. 20% pink
-    color = 'rgb(81, 162, 233)';
+    color = 'rgb(157, 101, 97)';
 
-  // ctx.globalAlpha = 0.8;
+   // ctx.globalAlpha = 0.8;
   canvas.width = document.body.scrollWidth;
   canvas.height = window.innerHeight;
   canvas.style.display = 'block';
   // ctx.fillStyle = colorDot;
   // ctx.fillStyle = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
-  ctx.lineWidth = 2;
+  ctx.lineWidth = 0.3;
   ctx.strokeStyle = color;
 
   let mousePosition = {
@@ -100,10 +100,10 @@ const canvasDots = function () {
     this.x = Math.random() * canvas.width;
     this.y = Math.random() * canvas.height;
 
-    this.vx = -1 + Math.random();
-    this.vy = -1 + Math.random();
+    this.vx = -0.5 + Math.random();
+    this.vy = -0.5 + Math.random();
 
-    this.radius = Math.random() * 2;
+    this.radius = Math.random() * 1.5;
 
     // this.colour = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
     this.colour = colorDot[Math.floor(Math.random() * colorDot.length)];
@@ -170,7 +170,7 @@ const canvasDots = function () {
               const dotDistance =
                 ((i_dot.x - mousePosition.x) ** 2 +
                   (i_dot.y - mousePosition.y) ** 2) **
-                0.559;
+                0.5;
               let distanceRatio = dotDistance / dots.d_radius;
 
               // make it so it doesnt fade out completely
@@ -179,7 +179,7 @@ const canvasDots = function () {
                 distanceRatio = 0;
               }
 
-              ctx.strokeStyle = `rgb(81, 162, 233, ${1 - distanceRatio})`;
+              ctx.strokeStyle = `rgb(167, 101, 97, ${1 - distanceRatio})`;
 
               ctx.stroke();
               ctx.closePath();
@@ -203,7 +203,7 @@ const canvasDots = function () {
     dots.array[0].radius = 1.5;
 
     // first dot to be blue
-    dots.array[0].colour = '#51a2e9';
+    dots.array[0].colour = 'rgb(167, 101, 97)';
 
     dot.line();
     dot.animate();

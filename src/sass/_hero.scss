@@ -42,7 +42,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  color: $color-text;
+  color: $color-white;
   font-weight: 300;
 
   z-index: 999;
@@ -99,7 +99,7 @@
     font-weight: 500;
 
     cursor: pointer;
-    animation: moveInRight 1s .8s;
+    animation: moveInRight 1s 0.8s;
     animation-fill-mode: backwards;
     animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
 

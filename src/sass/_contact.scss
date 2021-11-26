@@ -30,13 +30,13 @@
     &:before {
       position: absolute;
       content: '';
-      border-bottom: 18px solid $color-blue2;
-      width: 21rem;
+      border-bottom: 6px solid $color-blue2;
+      width: 22.4rem;
       display: block;
       margin: 0 auto;
       position: relative;
-      left: 3.5rem;
-      top: 6.3rem;
+      left: 0.3rem;
+      top: 7.5rem;
 
       z-index: -1;
 
@@ -165,18 +165,18 @@
     }
     &::placeholder {
       /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: rgba($color-text, 0.6);
+      color: rgba($color-white, 0.6);
       opacity: 1; /* Firefox */
     }
 
     :-ms-input-placeholder {
       /* Internet Explorer 10-11 */
-      color: rgba($color-text, 0.6);
+      color: rgba($color-white, 0.6);
     }
 
     ::-ms-input-placeholder {
       /* Microsoft Edge */
-      color: rgba($color-text, 0.6);
+      color: rgba($color-white, 0.6);
     }
   }
 }

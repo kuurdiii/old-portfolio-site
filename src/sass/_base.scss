@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 
-$color-text: #fafafa;
+
+// colors
 $color-white: #fafafa;
 $color-red: #ff4d5a;
+$color-red2: #d37c81;
 $color-background-light2: rgb(20, 20, 20);
-$color-background: rgb(26, 26, 26);
+$color-background: rgba(11, 15, 20, 0.795);
+$color-background-main: rgba(11, 15, 20, 0.995);
+$color-background-box: rgb(16, 21, 27);
 $color-background-light: rgb(34, 34, 34);
 $color-blue: rgba(117, 255, 255, 0.945);
 $color-blue3: rgba(117, 255, 255, 0.363);
@@ -50,7 +54,7 @@ html {
 
 body {
   min-height: 100vh;
-  color: $color-text;
+  color: $color-white;
   font-family: montserrat, sans-serif;
   background-color: $color-background;
   overflow-x: hidden;
