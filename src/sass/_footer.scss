@@ -12,7 +12,8 @@
   display: flex;
   margin-bottom: 20px;
   &__github,
-  &__email {
+  &__email,
+  &__linkedin {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,8 +44,8 @@
 
 .copyright {
   color: $color-white;
-  font-size: 10px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 300;
 }
 
 .return-home {

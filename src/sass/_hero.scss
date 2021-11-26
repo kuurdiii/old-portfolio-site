@@ -115,9 +115,10 @@
       padding: 0.8rem 2rem;
     }
 
-    &:hover .heading__arrow {
+  &:hover .heading__arrow {
       transform: rotate(90deg);
     }
+
     &:before,
     &:after {
       content: '';
@@ -129,7 +130,7 @@
       height: 4.8rem;
 
       border-radius: 3px;
-      border: 2px solid rgba($color-white, 0.08);
+      border: 2px solid rgba($color-background, 0.08);
 
       filter: blur(0);
       transform-origin: 50%;
