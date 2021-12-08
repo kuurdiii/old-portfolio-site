@@ -2,7 +2,6 @@ import './sass/main.scss';
 import canvasDots from './heroCanvas.js';
 import canvasDotsBg from './bgCanvas.js';
 import TxtRotate from "./txtRotate.js";
-import { doc } from 'prettier';
 
 window.onload = function () {
   canvasDotsBg();

@@ -53,11 +53,15 @@
     margin-bottom: 10rem;
   }
 
+
   &__image {
     &-container {
       position: relative;
       height: 70rem;
       width: 100rem;
+      box-shadow: 0 0 50px 15px rgba(125, 214, 255, 0.062);
+   
+
 
       // border: 1px solid red;
       background-color: $color-background-box;
@@ -96,12 +100,16 @@
 
       &:hover {
         transform: scale(0.95);
+        box-shadow: 0 0 1px 1px rgba(231, 113, 148, 0.253);
+
+
       }
     }
 
     &-image {
       width: 85%;
       position: relative;
+      
 
       & img {
         width: 100%;
