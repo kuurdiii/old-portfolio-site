@@ -5,7 +5,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/template.html',
-      favicon: `./src/assets/fav.png`,
+      favicon: `./src/assets/ghost.png`,
     }),
   ],
   module: {
@@ -15,7 +15,7 @@ module.exports = {
         use: ['html-loader'],
       },
       {
-        test: /\.(svg|png|jpg|jpeg|gif|mov)$/i,
+        test: /\.(svg|png|jpg|jpeg|gif)$/i,
         use: {
           loader: 'file-loader',
           options: {
